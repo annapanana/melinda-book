@@ -16,6 +16,29 @@
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="title_test.js"></script>
 <script>
+// Global Scripts
+	var registeredAudio = [];
+function clearAllAudio() {
+	for (i = 0; i < registeredAudio.length; i++) {
+		registeredAudio[i].stop();
+	}
+	registeredAudio = [];
+}
+function addAudio(ac) {
+	registeredAudio.push(ac);
+	ac.on("complete", () => { 
+		removeAudio(registeredAudio.length - 1);
+	}, this);
+}
+function removeAudio(i) {
+	registeredAudio.splice(i, 1);
+}
+function playAudio(name, looping) {
+	var ac = createjs.Sound.play(name, {interrupt: createjs.Sound.INTERRUPT_ANY, loop: looping});
+	addAudio(ac);
+	return ac;
+}</script>
+<script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
 	canvas = document.getElementById("canvas");
