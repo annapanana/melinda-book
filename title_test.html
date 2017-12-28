@@ -17,9 +17,14 @@
 <script src="title_test.js"></script>
 <script>
 // Global Scripts
-	var registeredAudio = [];
+	// GLOBAL VARIABLES
+var pageTransition = 300;
+var currentPage = 0;
+// AUDIO METHODS
+var registeredAudio = [];
 function clearAllAudio() {
 	for (i = 0; i < registeredAudio.length; i++) {
+		console.log("Stopping:", registeredAudio[i].src);
 		registeredAudio[i].stop();
 	}
 	registeredAudio = [];
@@ -34,9 +39,41 @@ function removeAudio(i) {
 	registeredAudio.splice(i, 1);
 }
 function playAudio(name, looping) {
-	var ac = createjs.Sound.play(name, {interrupt: createjs.Sound.INTERRUPT_ANY, loop: looping});
+	console.log("play", name);
+	var ac = createjs.Sound.play(name, {loop: looping, interrupt: createjs.Sound.INTERRUPT_EARLY});
 	addAudio(ac);
 	return ac;
+}
+var queue = new createjs.LoadQueue();
+queue.on("fileload", handleFileLoad);
+queue.on("complete", handleComplete);
+createjs.Sound.alternateExtensions = ["mp3"];
+queue.installPlugin(createjs.Sound);
+queue.loadManifest([
+	{id:"humm", src:"audio/title/humm.mp3"},
+	{id:"mel-wow", src:"audio/title/wow.mp3"},
+	{id:"cover4", src:"audio/title/cover_4.mp3"},
+	{id:"harp", src:"audio/title/cover_harp.mp3"},
+    {id:"bg_music_ch01", src:"audio/ch_01/funny_walk_loop.mp3"},
+    // CH 01 PG 01
+	{id:"bg_music_ch01_pg01", src:"audio/ch_01/pg_01/busted-flat-blues-a-faster.mp3"},
+	{id:"mel-get-ready", src:"audio/ch_01/pg_01/mel-get-ready.mp3"},
+	{id:"mel-hi", src:"audio/ch_01/pg_01/mel-hello.mp3"},
+	{id:"mel-im-melinda", src:"audio/ch_01/pg_01/mel-im-melinda.mp3"},
+	// CH 01 PG 02
+	{id:"bg_music_ch01_pg02", src:"audio/ch_01/pg_02/busted-flat-blues-cycle.mp3"},
+	{id:"frankie-intro", src:"audio/ch_01/pg_02/frankie-intro.mp3"},
+	{id:"giggle-pg2", src:"audio/ch_01/pg_02/giggle-page2.mp3"},
+	{id:"giggle-short", src:"audio/ch_01/pg_02/giggle-short.mp3"},
+	{id:"jon-intro", src:"audio/ch_01/pg_02/jon-intro.mp3"},
+	{id:"lilly-intro", src:"audio/ch_01/pg_02/lil-intro.mp3"},
+	{id:"mel-best-friends", src:"audio/ch_01/pg_02/mel-best-friends.mp3"},
+]);
+function handleFileLoad(param) {
+}
+function handleComplete(param) {
+	console.log('audio complete', param);
+	// TODO trigger title page here after all audio has loaded
 }</script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
@@ -65,6 +102,9 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
+	var preloaderDiv = document.getElementById("_preload_div_");
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
 	exportRoot = new lib.book_master();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
@@ -100,8 +140,8 @@ function handleComplete(evt,comp) {
 			}			
 			canvas.width = w*pRatio*sRatio;			
 			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
-			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			canvas.style.width = anim_container.style.width = dom_overlay_container.style.width = preloaderDiv.style.width = w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = preloaderDiv.style.height = h*sRatio+'px';
 			stage.scaleX = pRatio*sRatio;			
 			stage.scaleY = pRatio*sRatio;			
 			lastW = iw; lastH = ih; lastS = sRatio;            
@@ -119,9 +159,10 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:2048px; height:1536px">
-		<canvas id="canvas" width="2048" height="1536" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2048px; height:1536px; position: absolute; left: 0px; top: 0px; display: block;">
+		<canvas id="canvas" width="2048" height="1536" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2048px; height:1536px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:1536px; width: 2048px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
