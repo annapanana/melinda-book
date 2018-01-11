@@ -18,11 +18,12 @@
 <script>
 // Global Scripts
 	// GLOBAL VARIABLES
-var pageTransition = 300;
+var pageTransition = 500;
 var currentPage = 0;
 // AUDIO METHODS
 var registeredAudio = [];
 function clearAllAudio() {
+	console.log("clear all audio");
 	for (i = 0; i < registeredAudio.length; i++) {
 		console.log("Stopping:", registeredAudio[i].src);
 		registeredAudio[i].stop();
@@ -72,7 +73,7 @@ queue.loadManifest([
 function handleFileLoad(param) {
 }
 function handleComplete(param) {
-	console.log('audio complete', param);
+	//console.log('audio complete', param);
 	// TODO trigger title page here after all audio has loaded
 }</script>
 <script>
