@@ -2,7 +2,22 @@
 
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-lib.ssMetadata = [];
+lib.ssMetadata = [
+		{name:"title_test_atlas_", frames: [[0,0,2048,1536]]},
+		{name:"title_test_atlas_2", frames: [[0,0,2048,1536]]},
+		{name:"title_test_atlas_3", frames: [[0,0,2048,1536]]},
+		{name:"title_test_atlas_4", frames: [[0,0,2048,1536]]},
+		{name:"title_test_atlas_5", frames: [[0,0,2048,1536]]},
+		{name:"title_test_atlas_6", frames: [[0,0,1206,1278]]},
+		{name:"title_test_atlas_7", frames: [[0,0,892,1502],[894,0,1018,1208]]},
+		{name:"title_test_atlas_8", frames: [[0,0,1502,782],[0,784,1630,688]]},
+		{name:"title_test_atlas_9", frames: [[942,0,902,874],[0,0,940,942]]},
+		{name:"title_test_atlas_10", frames: [[530,0,1260,588],[530,590,810,772],[0,0,528,1460]]},
+		{name:"title_test_atlas_11", frames: [[804,715,1086,386],[784,0,794,713],[0,0,782,766],[0,768,802,560],[0,1330,1938,204]]},
+		{name:"title_test_atlas_12", frames: [[1422,750,588,566],[0,1060,830,432],[656,488,1376,260],[778,0,1190,254],[0,488,654,570],[0,0,776,486],[832,750,588,566]]},
+		{name:"title_test_atlas_13", frames: [[0,220,770,348],[534,796,954,180],[1604,410,400,442],[1604,0,444,408],[841,1378,650,154],[841,978,552,242],[841,1222,794,154],[772,220,830,286],[772,508,830,286],[0,0,1350,218],[0,570,532,444],[1490,854,504,316],[420,1016,419,412],[0,1016,418,510]]},
+		{name:"title_test_atlas_14", frames: [[790,170,328,112],[644,0,1142,86],[1788,0,240,242],[1120,170,328,112],[1764,244,110,76],[0,0,642,154],[1450,170,116,82],[0,156,240,242],[1640,88,122,198],[242,156,328,168],[572,170,216,216],[644,88,994,80]]}
+];
 
 
 // symbols:
@@ -10,321 +25,374 @@ lib.ssMetadata = [];
 
 
 (lib.aboutipadhd = function() {
-	this.initialize(img.aboutipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,328,112);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.andbuildourownfloatipadhd = function() {
-	this.initialize(img.andbuildourownfloatipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1142,86);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backpageaipadhd = function() {
-	this.initialize(img.backpageaipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,240,242);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backgroundchapter1ipadhd = function() {
-	this.initialize(img.backgroundchapter1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2048,1536);
+	this.spriteSheet = ss["title_test_atlas_2"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backgroundc1p1ipadhd = function() {
-	this.initialize(img.backgroundc1p1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2048,1536);
+	this.spriteSheet = ss["title_test_atlas_3"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backgroundcoveripadhd = function() {
-	this.initialize(img.backgroundcoveripadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2048,1536);
+	this.spriteSheet = ss["title_test_atlas_"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backgroundkitchenipadhd = function() {
-	this.initialize(img.backgroundkitchenipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2048,1536);
+	this.spriteSheet = ss["title_test_atlas_4"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.backgroundMardinipadhd = function() {
-	this.initialize(img.backgroundMardinipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2048,1536);
+	this.spriteSheet = ss["title_test_atlas_5"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.beadsyellowipadhd = function() {
-	this.initialize(img.beadsyellowipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,770,348);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.Bitmap1 = function() {
-	this.initialize(img.Bitmap1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,588,566);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.chapter1ipadhd = function() {
-	this.initialize(img.chapter1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,954,180);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.creditsAipadhd = function() {
-	this.initialize(img.creditsAipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,328,112);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.floatipadhd = function() {
-	this.initialize(img.floatipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1260,588);
+	this.spriteSheet = ss["title_test_atlas_10"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.frankbubblefriendsintroipadhd = function() {
-	this.initialize(img.frankbubblefriendsintroipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,830,432);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.frankfriendsintroipadhd = function() {
-	this.initialize(img.frankfriendsintroipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,442);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.frankiegoingtomardigrasipadhd = function() {
-	this.initialize(img.frankiegoingtomardigrasipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,444,408);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.getreadytogoonanadventureipadhd = function() {
-	this.initialize(img.getreadytogoonanadventureipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1376,260);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.hiaipadhd = function() {
-	this.initialize(img.hiaipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,110,76);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.imlillytextipadhd = function() {
-	this.initialize(img.imlillytextipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,642,154);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.imfrankiemelindasbrotheripadhd = function() {
-	this.initialize(img.imfrankiemelindasbrotheripadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,650,154);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.imgoingtobethefirstkidonmarsipadhd = function() {
-	this.initialize(img.imgoingtobethefirstkidonmarsipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,552,242);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.imjonathanandilikeadventuresipadhd = function() {
-	this.initialize(img.imjonathanandilikeadventuresipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,794,154);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.jobubblefriendsintroipadhd = function() {
-	this.initialize(img.jobubblefriendsintroipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,830,286);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.Jonathanipadhd = function() {
-	this.initialize(img.Jonathanipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,892,1502);
+	this.spriteSheet = ss["title_test_atlas_7"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.jonc1p2aipadhd = function() {
-	this.initialize(img.jonc1p2aipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,810,772);
+	this.spriteSheet = ss["title_test_atlas_10"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.kidsonfloatipadhd = function() {
-	this.initialize(img.kidsonfloatipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1190,254);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.kidswalkipadhd = function() {
-	this.initialize(img.kidswalkipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1502,782);
+	this.spriteSheet = ss["title_test_atlas_8"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.kitchentableipadhd = function() {
-	this.initialize(img.kitchentableipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1630,688);
+	this.spriteSheet = ss["title_test_atlas_8"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.layer1ipadhd = function() {
-	this.initialize(img.layer1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,830,286);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.lillygoingtomardi2ipadhd = function() {
-	this.initialize(img.lillygoingtomardi2ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1018,1208);
+	this.spriteSheet = ss["title_test_atlas_7"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.mardigrasipadhd = function() {
-	this.initialize(img.mardigrasipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1350,218);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melmardigrasipadhd = function() {
-	this.initialize(img.melmardigrasipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,654,570);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melarmipadhd = function() {
-	this.initialize(img.melarmipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,532,444);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melbubc1p12ipadhd = function() {
-	this.initialize(img.melbubc1p12ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,776,486);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melbubc1p13ipadhd = function() {
-	this.initialize(img.melbubc1p13ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,902,874);
+	this.spriteSheet = ss["title_test_atlas_9"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melbubblefriendsintroipadhd = function() {
-	this.initialize(img.melbubblefriendsintroipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1086,386);
+	this.spriteSheet = ss["title_test_atlas_11"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melindaauge = function() {
-	this.initialize(img.melindaauge);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,116,82);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melindapage2hd = function() {
-	this.initialize(img.melindapage2hd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,794,713);
+	this.spriteSheet = ss["title_test_atlas_11"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melinda1ipadhd = function() {
-	this.initialize(img.melinda1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,782,766);
+	this.spriteSheet = ss["title_test_atlas_11"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melinda2bubblecopyipadhd = function() {
-	this.initialize(img.melinda2bubblecopyipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,504,316);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melinda2bubble = function() {
-	this.initialize(img.melinda2bubble);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,419,412);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(12);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melindac1p1ipadhd = function() {
-	this.initialize(img.melindac1p1ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,528,1460);
+	this.spriteSheet = ss["title_test_atlas_10"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.melindashandhiipadhd = function() {
-	this.initialize(img.melindashandhiipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,418,510);
+	this.spriteSheet = ss["title_test_atlas_13"];
+	this.gotoAndStop(13);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.nextpageipadhd = function() {
-	this.initialize(img.nextpageipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,240,242);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.o2ipadhd = function() {
-	this.initialize(img.o2ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,802,560);
+	this.spriteSheet = ss["title_test_atlas_11"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.page2lillyipadhd = function() {
-	this.initialize(img.page2lillyipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,588,566);
+	this.spriteSheet = ss["title_test_atlas_12"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.qipadhd = function() {
-	this.initialize(img.qipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,122,198);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.scdipadhd = function() {
-	this.initialize(img.scdipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,328,168);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.stars3ipadhd = function() {
-	this.initialize(img.stars3ipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1206,1278);
+	this.spriteSheet = ss["title_test_atlas_6"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.startbutaipadhd = function() {
-	this.initialize(img.startbutaipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,216,216);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.swirlcoveripadhd = function() {
-	this.initialize(img.swirlcoveripadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,940,942);
+	this.spriteSheet = ss["title_test_atlas_9"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.thesearemybestfriendsipadhd = function() {
-	this.initialize(img.thesearemybestfriendsipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,994,80);
+	this.spriteSheet = ss["title_test_atlas_14"];
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
 
 
 (lib.togetherwethinkupgreatadventuresthistimewewillcelebipadhd = function() {
-	this.initialize(img.togetherwethinkupgreatadventuresthistimewewillcelebipadhd);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1938,204);// helper functions:
+	this.spriteSheet = ss["title_test_atlas_11"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop));
@@ -1225,7 +1293,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.timeline.addTween(cjs.Tween.get(this.lilly_text).wait(333));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-345,-439.6,670,725.1);
+p.nominalBounds = new cjs.Rectangle(-345,-439.6,670,725.2);
 
 
 (lib.jonthan_text = function(mode,startPosition,loop) {
@@ -1866,8 +1934,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 				this.gotoAndStop(2);
 			}, pageTransition);
 		});
-		
-		console.log(this.forward_button);
 	}
 	this.frame_4 = function() {
 		console.log("chapter 1, page 3");
@@ -2196,59 +2262,20 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/aboutipadhd.png", id:"aboutipadhd"},
-		{src:"images/andbuildourownfloatipadhd.png", id:"andbuildourownfloatipadhd"},
-		{src:"images/backpageaipadhd.png", id:"backpageaipadhd"},
-		{src:"images/backgroundchapter1ipadhd.png", id:"backgroundchapter1ipadhd"},
-		{src:"images/backgroundc1p1ipadhd.png", id:"backgroundc1p1ipadhd"},
-		{src:"images/backgroundcoveripadhd.jpg", id:"backgroundcoveripadhd"},
-		{src:"images/backgroundkitchenipadhd.png", id:"backgroundkitchenipadhd"},
-		{src:"images/backgroundMardinipadhd.png", id:"backgroundMardinipadhd"},
-		{src:"images/beadsyellowipadhd.png", id:"beadsyellowipadhd"},
-		{src:"images/Bitmap1.png", id:"Bitmap1"},
-		{src:"images/chapter1ipadhd.png", id:"chapter1ipadhd"},
-		{src:"images/creditsAipadhd.png", id:"creditsAipadhd"},
-		{src:"images/floatipadhd.png", id:"floatipadhd"},
-		{src:"images/frankbubblefriendsintroipadhd.png", id:"frankbubblefriendsintroipadhd"},
-		{src:"images/frankfriendsintroipadhd.png", id:"frankfriendsintroipadhd"},
-		{src:"images/frankiegoingtomardigrasipadhd.png", id:"frankiegoingtomardigrasipadhd"},
-		{src:"images/getreadytogoonanadventureipadhd.png", id:"getreadytogoonanadventureipadhd"},
-		{src:"images/hiaipadhd.png", id:"hiaipadhd"},
-		{src:"images/imlillytextipadhd.png", id:"imlillytextipadhd"},
-		{src:"images/imfrankiemelindasbrotheripadhd.png", id:"imfrankiemelindasbrotheripadhd"},
-		{src:"images/imgoingtobethefirstkidonmarsipadhd.png", id:"imgoingtobethefirstkidonmarsipadhd"},
-		{src:"images/imjonathanandilikeadventuresipadhd.png", id:"imjonathanandilikeadventuresipadhd"},
-		{src:"images/jobubblefriendsintroipadhd.png", id:"jobubblefriendsintroipadhd"},
-		{src:"images/Jonathanipadhd.png", id:"Jonathanipadhd"},
-		{src:"images/jonc1p2aipadhd.png", id:"jonc1p2aipadhd"},
-		{src:"images/kidsonfloatipadhd.png", id:"kidsonfloatipadhd"},
-		{src:"images/kidswalkipadhd.png", id:"kidswalkipadhd"},
-		{src:"images/kitchentableipadhd.png", id:"kitchentableipadhd"},
-		{src:"images/layer1ipadhd.png", id:"layer1ipadhd"},
-		{src:"images/lillygoingtomardi2ipadhd.png", id:"lillygoingtomardi2ipadhd"},
-		{src:"images/mardigrasipadhd.png", id:"mardigrasipadhd"},
-		{src:"images/melmardigrasipadhd.png", id:"melmardigrasipadhd"},
-		{src:"images/melarmipadhd.png", id:"melarmipadhd"},
-		{src:"images/melbubc1p12ipadhd.png", id:"melbubc1p12ipadhd"},
-		{src:"images/melbubc1p13ipadhd.png", id:"melbubc1p13ipadhd"},
-		{src:"images/melbubblefriendsintroipadhd.png", id:"melbubblefriendsintroipadhd"},
-		{src:"images/melindaauge.png", id:"melindaauge"},
-		{src:"images/melindapage2hd.png", id:"melindapage2hd"},
-		{src:"images/melinda1ipadhd.png", id:"melinda1ipadhd"},
-		{src:"images/melinda2bubblecopyipadhd.png", id:"melinda2bubblecopyipadhd"},
-		{src:"images/melinda2bubble.png", id:"melinda2bubble"},
-		{src:"images/melindac1p1ipadhd.png", id:"melindac1p1ipadhd"},
-		{src:"images/melindashandhiipadhd.png", id:"melindashandhiipadhd"},
-		{src:"images/nextpageipadhd.png", id:"nextpageipadhd"},
-		{src:"images/o2ipadhd.png", id:"o2ipadhd"},
-		{src:"images/page2lillyipadhd.png", id:"page2lillyipadhd"},
-		{src:"images/qipadhd.png", id:"qipadhd"},
-		{src:"images/scdipadhd.png", id:"scdipadhd"},
-		{src:"images/stars3ipadhd.png", id:"stars3ipadhd"},
-		{src:"images/startbutaipadhd.png", id:"startbutaipadhd"},
-		{src:"images/swirlcoveripadhd.png", id:"swirlcoveripadhd"},
-		{src:"images/thesearemybestfriendsipadhd.png", id:"thesearemybestfriendsipadhd"},
-		{src:"images/togetherwethinkupgreatadventuresthistimewewillcelebipadhd.png", id:"togetherwethinkupgreatadventuresthistimewewillcelebipadhd"}
+		{src:"images/title_test_atlas_.png", id:"title_test_atlas_"},
+		{src:"images/title_test_atlas_2.png", id:"title_test_atlas_2"},
+		{src:"images/title_test_atlas_3.png", id:"title_test_atlas_3"},
+		{src:"images/title_test_atlas_4.png", id:"title_test_atlas_4"},
+		{src:"images/title_test_atlas_5.png", id:"title_test_atlas_5"},
+		{src:"images/title_test_atlas_6.png", id:"title_test_atlas_6"},
+		{src:"images/title_test_atlas_7.png", id:"title_test_atlas_7"},
+		{src:"images/title_test_atlas_8.png", id:"title_test_atlas_8"},
+		{src:"images/title_test_atlas_9.png", id:"title_test_atlas_9"},
+		{src:"images/title_test_atlas_10.png", id:"title_test_atlas_10"},
+		{src:"images/title_test_atlas_11.png", id:"title_test_atlas_11"},
+		{src:"images/title_test_atlas_12.png", id:"title_test_atlas_12"},
+		{src:"images/title_test_atlas_13.png", id:"title_test_atlas_13"},
+		{src:"images/title_test_atlas_14.png", id:"title_test_atlas_14"}
 	],
 	preloads: []
 };
